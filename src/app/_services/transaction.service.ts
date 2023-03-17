@@ -9,6 +9,6 @@ export class TransactionService {
   constructor(private http: HttpClient) { }
 
   getAllTransactions() {
-    return this.http.get(`http://localhost:5050/api/transactions`);
+    return this.http.get(`https://nakore.onrender.com/api/transactions`);
 }
 }
