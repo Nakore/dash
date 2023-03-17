@@ -1,9 +1,5 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
-
-import { environment } from '@environments/environment';
-import { User } from '@app/_models';
 
 @Injectable({ providedIn: 'root' })
 export class UserService {
@@ -14,6 +10,6 @@ export class UserService {
     }
 
     getAllFarmers() {
-        return this.http.get(`https://nakore.onrender.com/api/getfarmer`);
+        return this.http.get(`http://localhost:5050/api/getfarmer`);
     }
 }

@@ -769,11 +769,16 @@
                           <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
                             <div class="me-2">
                               <h6 class="mb-0">{{transaction.product}}</h6>
-                              <small class="text-muted">{{transaction.paymentStatus}}</small>
+                              <small class="text-success fw-semibold">
+                                  <i class="bx bx-chevron-up"></i>
+                                  {{transaction.paymentStatus}}
+                                </small><p>
+                                <small class="fw-semibold">{{transaction.amount}}</small>
+                                </p>
                             </div>
-                            <div class="user-progress">
-                              <small class="fw-semibold">{{transaction.amount}}</small>
-                            </div>
+                            
+                              
+                            
                           </div>
                         </li>                  
                         
