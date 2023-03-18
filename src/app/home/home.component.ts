@@ -51,7 +51,11 @@ export class HomeComponent {
     }
 
     protected total() {
-        return this.transactions.reduce((acc: any, product: any) => acc += product.amount * this.getTransactions.length, 0)
+        this.transact.Total().subscribe((res)=>{
+            for( let lo in res){
+                console.log({'total': lo});
+            }
+        })
     }
     
 }

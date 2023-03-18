@@ -11,4 +11,8 @@ export class TransactionService {
   getAllTransactions() {
     return this.http.get(`https://nakore.onrender.com/api/transactions`);
 }
+
+Total() {
+  return this.http.get(`https://nakore.onrender.com/api/total`);
+}
 }
