@@ -18,6 +18,7 @@ export class HomeComponent {
         this.getTransactions();
         this.getAdmin();
         
+        
     }
 
     public getFarmers() {
@@ -26,8 +27,6 @@ export class HomeComponent {
                 this.user.push(res.farmers[i]);
                 //console.log(res.farmers[i]);
             }
-            
-           console.log(this.user)
         })
     }
 
@@ -35,7 +34,7 @@ export class HomeComponent {
         this.transact.getAllTransactions().subscribe((res: any) => {
             for(let i = 0; i < res.transactions.length; i++) {
                 this.transactions.push(res.transactions[i]);
-                console.log(this.transactions[i]);
+                
             }
         })
     }
