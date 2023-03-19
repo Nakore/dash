@@ -56,5 +56,9 @@ export class HomeComponent {
             }
         })
     } */
+    logout() {
+        this.auth.logout();
+    }
+    
     
 }
