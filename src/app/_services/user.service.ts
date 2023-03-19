@@ -7,10 +7,10 @@ export class UserService {
     constructor(private http: HttpClient) { }
 
     getAllProducts() {
-        return this.http.get(`https://nakore.onrender.com/api/getfarmer`);
+        return this.http.get(`http://localhost:5050/api/getfarmer`);
     }
 
     getAllFarmers() {
-        return this.http.get(`https://nakore.onrender.com/api/getfarmer`);
+        return this.http.get(`http://localhost:5050/api/getfarmer`);
     }
 }

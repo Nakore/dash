@@ -50,12 +50,12 @@ export class HomeComponent {
         }
     }
 
-    protected total() {
+    /* protected total() {
         this.transact.Total().subscribe((res)=>{
             for( let lo in res){
                 console.log({'total': lo});
             }
         })
-    }
+    } */
     
 }

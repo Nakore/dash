@@ -12,7 +12,7 @@ export class TransactionService {
     return this.http.get(`https://nakore.onrender.com/api/transactions`);
 }
 
-Total() {
+/* Total() {
   return this.http.get(`https://nakore.onrender.com/api/total`);
-}
-}
+}*/
+} 
