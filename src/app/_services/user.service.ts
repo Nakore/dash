@@ -11,6 +11,6 @@ export class UserService {
     }
 
     getAllFarmers() {
-        return this.http.get(`http://localhost:5050/api/getfarmer`);
+        return this.http.get(`https://nakore.onrender.com/api/getfarmer`);
     }
 }

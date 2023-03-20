@@ -442,7 +442,7 @@
                     <thead>
                       <tr>
                         <th>Item</th>
-                        <th>Phone</th>
+                        <th>Ref Code</th>
                         <th>State</th>
                         <th>Status</th>
                         <th>Actions</th>
@@ -451,7 +451,7 @@
                     <tbody class="table-border-bottom-0">
                       <tr *ngFor="let order of transactions">
                         <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>{{order.product}}</strong></td>
-                        <td>{{order.phone}}</td>
+                        <td>{{order.transactionId}}</td>
                         <td>
                           {{order.state}}
                         </td>
